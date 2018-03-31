@@ -31,6 +31,7 @@ class Sample4
       Car4 car1 = new Car4();
 
       car1.setNum(1234);
+      car1.setNum(124);
       car1.setGas(20.5);
       car1.show();
    }
