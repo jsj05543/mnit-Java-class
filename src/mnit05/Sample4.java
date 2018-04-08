@@ -1,5 +1,7 @@
 package mnit05;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 class Sample4
 {
@@ -9,6 +11,7 @@ class Sample4
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
+     
 
       String str = br.readLine();
       int res = Integer.parseInt(str);
@@ -19,6 +22,9 @@ class Sample4
       else if(res == 2){
          System.out.println("2が入力されました。");
       }
+      else if(res == 3){
+          System.out.println("2が入力されました。");
+       }
       else{
          System.out.println("1か2を入力してください。");
       }

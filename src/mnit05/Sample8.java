@@ -1,5 +1,7 @@
 package mnit05;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 class Sample8
 {
@@ -15,7 +17,6 @@ class Sample8
       int res = Integer.parseInt(str);
 
       char ans = (res == 1) ? 'A' : 'B';
-
       System.out.println(ans + "コースを選択しました。");
    }
 }

@@ -1,5 +1,7 @@
 package mnit05;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 class Sample6
 {
@@ -11,24 +13,21 @@ class Sample6
         new BufferedReader(new InputStreamReader(System.in));
 
       String str = br.readLine();
-      
-      String b;
-      
-     b= "sddddddda";
-   
-      char res = str.charAt(0);
 
-      switch(res){
-         case 'A':
+
+      //char res = str.charAt(0);
+
+      switch(str){
+         case "AA":
             System.out.println("優です。");
             break;
-         case 'B':
+         case "BB":
             System.out.println("良です。");
             break;
-         case 'C':
+         case "CC":
              System.out.println("合格です。");
              break;
-         case 'D':
+         case "DD":
              System.out.println("不合格です。");
              break;
          default:

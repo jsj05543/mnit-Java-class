@@ -1,26 +1,25 @@
-package mnit04;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-class Sample3
+class Sample4
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("整数を二つ入力してください");
-      
-      
+      System.out.println("文字列を入力してください。");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
-   
 
       String str1 = br.readLine();
+
+      System.out.println("追加する文字列を入力してください。");
+
       String str2 = br.readLine();
 
-      int num1 = Integer.parseInt(str1);
-      int num2 = Integer.parseInt(str2);
+      StringBuffer sb = new StringBuffer(str1);
+      sb.append(str2);
 
-      System.out.println("たし算の結果は" + (num1+num2) + "です。");
+      System.out.println(str1 + "に" + str2 + "を追加すると" + sb + "です。");
    }
 }
