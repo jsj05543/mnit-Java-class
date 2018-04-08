@@ -1,12 +1,13 @@
+package mnit09;
 //車クラス
-class Car
+class Car8
 {
    public static int sum = 0;
 
    private int num;
    private double gas;
 
-   public Car()
+   public Car8()
    {
       num = 0;
       gas = 0.0;
@@ -34,16 +35,16 @@ class Sample8
 {
    public static void main(String[] args)
    {
-      Car.showSum();
+      Car8.showSum();
 
-      Car car1 = new Car();
+      Car8 car1 = new Car8();
       car1.setCar(1234, 20.5);
 
-      Car.showSum();
+      Car8.showSum();
 
-      Car car2 = new Car();
+      Car8 car2 = new Car8();
       car2.setCar(4567, 30.5);
 
-      Car.showSum();
+      Car8.showSum();
    }
 }

@@ -1,3 +1,4 @@
+package mnit10;
 //車クラス
 class Car9
 {
@@ -27,11 +28,11 @@ class Sample9
 {
    public static void main(String[] args)
    {
-      Car[] cars;
-      cars = new Car[3];
+      Car9[] cars;
+      cars = new Car9[3];
 
       for(int i=0; i<cars.length; i++){
-         cars[i] = new Car();
+         cars[i] = new Car9();
       }
 
       cars[0].setCar(1234, 20.5);

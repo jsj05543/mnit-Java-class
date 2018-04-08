@@ -1,11 +1,11 @@
 package mnit09;
 //車クラス
-class Car
+class Car7
 {
    private int num;
    private double gas;
 
-   public Car()
+   public Car7()
    {
       num = 0;
       gas = 0.0;
@@ -28,11 +28,11 @@ class Sample7
 {
    public static void main(String[] args)
    {
-      Car car1 = new Car();
+      Car7 car1 = new Car7();
       car1.setCar(1234, 20.5);
       car1.show();
 
-      Car car2 = new Car();
+      Car7 car2 = new Car7();
       car2.setCar(4567, 30.5);
       car2.show();
    }

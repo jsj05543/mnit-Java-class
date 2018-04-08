@@ -1,17 +1,17 @@
 package mnit09;
 //車クラス
-class Car
+class Car6
 {
    private int num;
    private double gas;
 
-   public Car()
+   public Car6()
    {
       num = 0;
       gas = 0.0;
       System.out.println("車を作成しました。");
    }
-   public Car(int n, double g)
+   public Car6(int n, double g)
    {
       this();
       num = n;
@@ -29,10 +29,10 @@ class Sample6
 {
    public static void main(String[] args)
    {
-      Car car1 = new Car();
+      Car6 car1 = new Car6();
       car1.show();
 
-      Car car2 = new Car(1234, 25.0);
+      Car6 car2 = new Car6(1234, 25.0);
       car2.show();
    }
 }

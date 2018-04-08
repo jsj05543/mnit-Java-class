@@ -1,10 +1,11 @@
+package mnit10;
 //車クラス
-class Car
+class Car6
 {
    private int num;
    private double gas;
 
-   public Car()
+   public Car6()
    {
       num = 0;
       gas = 0.0;
@@ -27,12 +28,12 @@ class Sample6
 {
    public static void main(String[] args)
    {
-      Car car1;
+      Car6 car1;
       System.out.println("car1を宣言しました。");
-      car1 = new Car();
+      car1 = new Car6();
       car1.setCar(1234, 20.5);
 
-      Car car2;
+      Car6 car2;
       System.out.println("car2を宣言しました。");
 
       car2 = car1;
