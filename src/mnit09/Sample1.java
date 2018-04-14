@@ -2,7 +2,7 @@ package mnit09;
 //車クラス
 class Car1
 {
-   int num;
+   protected  int num;
    double gas;
 
    void show()

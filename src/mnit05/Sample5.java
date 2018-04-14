@@ -1,5 +1,7 @@
 package mnit05;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 class Sample5
 {
@@ -18,7 +20,7 @@ class Sample5
       switch(res){
          case 1:
             System.out.println("優です。");
-            break;
+            //break;
          case 2:
             System.out.println("良です。");
             break;

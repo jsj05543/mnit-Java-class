@@ -2,6 +2,7 @@ package mnit09;
 //車クラス
 class Car2
 {
+	
    private int num;
    private double gas;
    public void setNumGas(int n, double g)

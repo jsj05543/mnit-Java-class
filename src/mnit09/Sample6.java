@@ -13,7 +13,7 @@ class Car6
    }
    public Car6(int n, double g)
    {
-      this();
+      //this();
       num = n;
       gas = g;
       System.out.println("ナンバーを" + num + "ガソリン量を" + gas + "にしました。");

@@ -1,27 +1,26 @@
 package mnit05;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 class Sample7
 {
    public static void main(String[] args) throws IOException
    {
-      System.out.println("あなたは男性ですか？");
-      System.out.println("YまたはNを入力してください。");
+      System.out.println("整数入力してください");
 
       BufferedReader br =
         new BufferedReader(new InputStreamReader(System.in));
 
-      String str = br.readLine();
-      char res = str.charAt(0);
-
-      if(res == 'Y' || res == 'y'){
-         System.out.println("あなたは男性ですね。");
+      String str1 = br.readLine();
+      int res1 = Integer.parseInt(str1);
+      if(res1%2==0){
+    	  System.out.println(res1%2);
+         System.out.println("偶数");
       }
-      else if(res == 'N' || res == 'n'){
-         System.out.println("あなたは女性ですね。");
-      }
-      else{
-         System.out.println("YまたはNを入力してください。");
+    else{
+    	 System.out.println(res1%2);
+         System.out.println("奇数");
       }
    }
 }

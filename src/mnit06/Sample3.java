@@ -1,6 +1,8 @@
 package mnit06;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 class Sample3
 {
@@ -13,9 +15,10 @@ class Sample3
 
       String str = br.readLine();
       int num = Integer.parseInt(str);
-            
+
       for(int i=1; i<=num; i++){
          System.out.print("*");
+         System.out.println();
       }
    }
 }
