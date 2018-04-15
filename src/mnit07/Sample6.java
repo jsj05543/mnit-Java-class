@@ -33,7 +33,6 @@ class Sample6
       for(int i=0; i< test1.length; i++){
          System.out.println("test1がさす" + (i+1) + "番目の人の点数は" + test1[i] + "です。");
       }
-
       for(int i=0; i< test2.length; i++){
          System.out.println("test2がさす" + (i+1) + "番目の人の点数は" + test2[i] + "です。");
       }

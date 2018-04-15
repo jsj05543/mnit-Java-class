@@ -1,34 +1,33 @@
 package mnit07;
 
-import java.io.*;
+import java.io.IOException;
 
 class Sample9
 {
    public static void main(String[] args) throws IOException
    {
-      BufferedReader br =
-                new BufferedReader(new InputStreamReader(System.in));
 
-      int[] test = new int[5];
-      System.out.println(test.length + "人の点数を入力してください");
+	   String[][] str=new String[2][3];
+	   str[0][0] = "a";
+	   str[0][1] = "b";
+	   str[0][2] = "b";
+	   str[1][0] = "d";
+	   str[1][1] = "e";
+	   str[1][2] = "e";
+	   int i=0;
+	   for(i=0;i<str.length;i++) {
+		   for(int j=0;j<str[i].length;j++) {
 
-      for(int i=0; i<test.length; i++){
-         String str = br.readLine();
-         test[i] = Integer.parseInt(str);
-      }
+			   System.out.println(str[i][j]);
+		   }
+		   System.out.println(str.length);
+		   System.out.println(str[i]);
+	   }
 
-      for(int s=0; s<test.length-1; s++){
-         for(int t=s+1; t<test.length; t++){
-            if(test[t] > test[s]){
-               int tmp = test[t];
-               test[t] = test[s];
-               test[s] = tmp;
-            }
-         }
-      }
 
-      for(int j=0; j<test.length; j++){
-         System.out.println( (j+1) + "番目の人の点数は" + test[j] + "です。");
-      }
+
+
    }
+
+
 }
