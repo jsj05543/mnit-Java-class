@@ -1,65 +1,66 @@
-//‚Ì‚è‚à‚ÌƒNƒ‰ƒX
-abstract class Vehicle
+package mnit12;
+//ã®ã‚Šã‚‚ã®ã‚¯ãƒ©ã‚¹
+abstract class Vehicle1
 {
-   protected int speed;
-   public void setSpeed(int s)
-   {
-     speed = s;
-     System.out.println("‘¬“x‚ğ" + speed + "‚É‚µ‚Ü‚µ‚½B");
-   }
-   abstract void show();
+ protected int speed;
+ public void setSpeed(int s)
+ {
+   speed = s;
+   System.out.println("é€Ÿåº¦ã‚’" + speed + "ã«ã—ã¾ã—ãŸã€‚");
+ }
+ abstract void show();
 }
-//ÔƒNƒ‰ƒX
-class Car extends Vehicle
+//è»Šã‚¯ãƒ©ã‚¹
+class Car1 extends Vehicle
 {
-   private int num;
-   private double gas;
-   
-   public Car(int n, double g)
-   {
-      num = n;
-      gas = g;
-      System.out.println("ƒiƒ“ƒo[" + num + "ƒKƒ\ƒŠƒ“—Ê" + gas+ "‚ÌÔ‚ğì¬‚µ‚Ü‚µ‚½B");
-   }
-   public void show()
-   {
-      System.out.println("Ô‚Ìƒiƒ“ƒo[‚Í" + num + "‚Å‚·B");
-      System.out.println("ƒKƒ\ƒŠƒ“—Ê‚Í" + gas + "‚Å‚·B");
-      System.out.println("‘¬“x‚Í" + speed + "‚Å‚·B");
-   }
-}
-//”òs‹@ƒNƒ‰ƒX
-class Plane extends Vehicle
-{
-   private int flight;
+ private int num;
+ private double gas;
 
-   public Plane(int f)
-   {
-      flight = f;
-      System.out.println("•Ö" + flight + "‚Ì”òs‹@‚ğì¬‚µ‚Ü‚µ‚½B");
-   }
-   public void show()
-   {
-      System.out.println("”òs‹@‚Ì•Ö‚Í" + flight + "‚Å‚·B");
-      System.out.println("‘¬“x‚Í" + speed + "‚Å‚·B");
-   }
+ public Car1(int n, double g)
+ {
+    num = n;
+    gas = g;
+    System.out.println("ãƒŠãƒ³ãƒãƒ¼" + num + "ã‚¬ã‚½ãƒªãƒ³é‡" + gas+ "ã®è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
+ }
+ public void show()
+ {
+    System.out.println("è»Šã®ãƒŠãƒ³ãƒãƒ¼ã¯" + num + "ã§ã™ã€‚");
+    System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã¯" + gas + "ã§ã™ã€‚");
+    System.out.println("é€Ÿåº¦ã¯" + speed + "ã§ã™ã€‚");
+ }
+}
+//é£›è¡Œæ©Ÿã‚¯ãƒ©ã‚¹
+class Plane extends Vehicle2
+{
+ private int flight;
+
+ public Plane(int f)
+ {
+    flight = f;
+    System.out.println("ä¾¿" + flight + "ã®é£›è¡Œæ©Ÿã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
+ }
+ public void show()
+ {
+    System.out.println("é£›è¡Œæ©Ÿã®ä¾¿ã¯" + flight + "ã§ã™ã€‚");
+    System.out.println("é€Ÿåº¦ã¯" + speed + "ã§ã™ã€‚");
+ }
 }
 
 class Sample2
 {
-   public static void main(String[] args)
-   {
-      Vehicle[] vc;
-      vc = new Vehicle[2];
+ public static void main(String[] args)
+ {
+    Vehicle[] vc;
+    vc = new Vehicle[2];
 
-      vc[0] = new Car(1234, 20.5);
-      vc[1] = new Plane(232);
+    vc[0] = new Car(1234, 20.5);
+    vc[1] = new Plane(232);
 
-      for(int i=0; i<vc.length; i++){
-          if(vc[i] instanceof Car)
-            System.out.println((i+1) + "”Ô–Ú‚ÌƒIƒuƒWƒFƒNƒg‚ÍCarƒNƒ‰ƒX‚Å‚·B");
-          else
-            System.out.println((i+1) + "”Ô–Ú‚ÌƒIƒuƒWƒFƒNƒg‚ÍCarƒNƒ‰ƒX‚Å‚Í‚ ‚è‚Ü‚¹‚ñB");
-      }
-   }
+    for(int i=0; i<vc.length; i++){
+        if(vc[i] instanceof Car)
+          System.out.println((i+1) + "ç•ªç›®ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯Carã‚¯ãƒ©ã‚¹ã§ã™ã€‚");
+        else
+          System.out.println((i+1) + "ç•ªç›®ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯Carã‚¯ãƒ©ã‚¹ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚");
+    }
+ }
 }
