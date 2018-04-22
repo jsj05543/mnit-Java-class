@@ -31,12 +31,14 @@ class Sample6
       Car6 car1;
       System.out.println("car1を宣言しました。");
       car1 = new Car6();
-      car1.setCar(1234, 20.5);
+      car1=null;
+      //car1.setCar(1234, 20.5);
 
       Car6 car2;
       System.out.println("car2を宣言しました。");
 
       car2 = car1;
+      //car1.setCar(8, 9.0);
       System.out.println("car2にcar1を代入しました。");
 
       System.out.print("car1がさす");

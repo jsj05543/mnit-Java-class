@@ -15,8 +15,10 @@ class Sample5
       String str1 = br.readLine();
       String str2 = br.readLine();
 
-      int num1 = Integer.parseInt(str1);
-      int num2 = Integer.parseInt(str2);
+      int num11 = Integer.parseInt(str1);
+      int num22 = Integer.parseInt(str2);
+      int num1=Integer.valueOf(str1);
+      int num2=Integer.valueOf(str2);
 
       int ans = Math.max(num1, num2);
 
