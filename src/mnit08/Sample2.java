@@ -1,6 +1,6 @@
 package mnit08;
 //車クラス
-class Car2
+class Car2 
 {
    int num;
    double gas;

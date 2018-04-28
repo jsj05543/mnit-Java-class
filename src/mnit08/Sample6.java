@@ -1,10 +1,8 @@
 package mnit08;
 //車クラス
-class Car6
-{
+class Car6{
    int num;
    double gas;
-
    int getNum()
    {
       System.out.println("ナンバーを調べました。");
