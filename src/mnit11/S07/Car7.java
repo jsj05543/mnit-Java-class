@@ -1,6 +1,6 @@
 package mnit11.S07;
 //車クラス
-class Car7
+class Car7 extends Object
 {
    protected int num;
    protected double gas;

@@ -5,8 +5,13 @@ class Sample4
    {
       Car4 car1 = new Car4();
 
-      car1.setNum(1234);
+      int num1=1233;
+      int num2=3454;
+
+      car1.setNum(num1);
+      car1.setNum(num2);
       car1.setGas(20.5);
+      car1.setName("TOYOTA1");
       car1.show();
    }
 }

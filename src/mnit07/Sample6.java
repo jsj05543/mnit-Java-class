@@ -6,35 +6,36 @@ class Sample6
    {
       int[] test1;
       test1 = new int[3];
-      System.out.println("test1を宣言しました。");
-      System.out.println("配列要素を確保しました。");
-
       test1[0] = 80;
       test1[1] = 60;
       test1[2] = 22;
 
       int[] test2;
-      System.out.println("test2を宣言しました。");
+      //System.out.println("test2を宣言しました。");
 
       test2 = test1;
-      System.out.println("test2にtest1を代入しました。");
-
+      //System.out.println("test2にtest1を代入しました。");
+      System.out.println("＊＊＊＊＊＊＊＊配列test1は＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊");
       for(int i=0; i<3; i++){
-         System.out.println("test1がさす" + (i+1) + "番目の人の点数は" + test1[i] + "です。");
+         System.out.print( (i+1) + "=" + test1[i]+",");
       }
-
+      System.out.println();
+      System.out.println("＊＊＊＊＊＊＊＊配列test2は(配列test1から代入)＊＊＊＊＊＊＊＊＊");
       for(int i=0; i<3; i++){
-         System.out.println("test2がさす" + (i+1) + "番目の人の点数は" + test2[i] + "です。");
+    	     System.out.print( (i+1) + "=" + test2[i]+",");
       }
-
+      System.out.println();
       test1[2] = 100;
-      System.out.println("test1がさす3番目の人の点数を変更します。");
-
+      System.out.println("＊＊＊＊＊＊＊＊配列test1(変更後)＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊");
       for(int i=0; i< test1.length; i++){
-         System.out.println("test1がさす" + (i+1) + "番目の人の点数は" + test1[i] + "です。");
+    	     System.out.print( (i+1) + "=" + test1[i]+",");
       }
+      System.out.println();
+      System.out.println("＊＊＊＊＊＊＊＊配列test2は(test1を変更後)＊＊＊＊＊＊＊＊＊＊＊");
       for(int i=0; i< test2.length; i++){
-         System.out.println("test2がさす" + (i+1) + "番目の人の点数は" + test2[i] + "です。");
+    	     System.out.print( (i+1) + "=" + test2[i]+",");
       }
+      System.out.println();
+      System.out.println("結果：配列を代入時代入元が変わったら代入先も変わる");
    }
 }

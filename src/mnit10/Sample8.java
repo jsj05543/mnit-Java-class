@@ -1,53 +1,40 @@
 package mnit10;
+import java.awt.Point;
 //車クラス
-class Car8
-{
-   private int num;
-   private double gas;
-   private String name;
-
-   public Car8()
-   {
-      num = 0;
-      gas = 0.0;
-      name = "名無し";
-      System.out.println("車を作成しました。");
-   }
-   public void setCar(int n, double g)
-   {
-      num = n;
-      gas = g;
-      System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
-   }
-   public void setName(String nm)
-   {
-      name = nm;
-      System.out.println("名前を" + name + "にしました。");
-   }
-   public void show()
-   {
-      System.out.println("車のナンバーは" + num + "です。");
-      System.out.println("ガソリン量は" + gas + "です。");
-      System.out.println("名前は" + name + "です。");
-   }
-}
-
 class Sample8
 {
    public static void main(String[] args)
    {
-      Car8 car1;
-      car1 = new Car8();
-
-      car1.show();
-
-      int number = 1234;
-      double gasoline = 20.5;
-      String str = "1号車";
-
-      car1.setCar(number, gasoline);
-      car1.setName(str);
-
-      car1.show();
+	   //基本型は値渡し
+	   int a = 10;
+	   System.out.println("****************aの値は***************** ");
+	   System.out.println("a=" + a);
+	   // メソッドを呼び出す
+	   Sample8.changeCar1(a);
+	   System.out.println("****************aの値は***************** ");
+	   System.out.println("a=" + a);
+	   System.out.println("*************************************** ");
+	   //参照型は参照渡し
+	   Point p = new Point(100, 200);
+	   System.out.println("p の参照先インスタンスの内容は " + p);
+	   // メソッドを呼び出す
+	   Sample8.changeCar2(p);
+	   System.out.println("p の参照先インスタンスの内容は " + p);
+   }
+   public static void changeCar1(int b)
+   {
+	   System.out.println("****************bの値は***************** ");
+	   System.out.println("b=" + b);
+	    // 値を変更する
+		b = 30;
+		System.out.println("****************bの値は(変更後)********** ");
+		System.out.println("b=" + b);
+   }
+   public static void changeCar2(Point car2)
+   {
+	   System.out.println("q の参照先インスタンスの内容は " + car2);
+	   car2.x = 300;
+	   car2.y = 400;
+		System.out.println("q の参照先インスタンスの内容は " + car2);
    }
 }

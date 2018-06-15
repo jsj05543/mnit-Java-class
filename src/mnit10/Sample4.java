@@ -19,7 +19,7 @@ class Sample4
       String str2 = br.readLine();
 
       StringBuffer sb = new StringBuffer(str1);
-      sb.append(str2);
+      StringBuffer S=sb.append(str2);
 
       System.out.println(str1 + "に" + str2 + "を追加すると" + sb + "です。");
    }

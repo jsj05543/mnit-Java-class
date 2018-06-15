@@ -20,6 +20,7 @@ class Sample3
       char ch = str2.charAt(0);
 
       int num = str1.indexOf(ch);
+      System.out.println("aaa"+num);
 
       if(num != -1)
          System.out.println(str1 + "の" + (num+1) + "番目に「" + ch +"」がみつかりました。");

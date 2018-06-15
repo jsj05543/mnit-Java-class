@@ -4,4 +4,5 @@ class Car1
 {
    double gas;
    int num;
+   String name;
 }

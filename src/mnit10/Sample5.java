@@ -20,6 +20,8 @@ class Sample5
       int num1=Integer.valueOf(str1);
       int num2=Integer.valueOf(str2);
 
+      System.out.println(num11+"|"+num22+"|"+num1+"|"+num2);
+
       int ans = Math.max(num1, num2);
 
       System.out.println(num1 + "と" + num2 + "のうち大きいほうは" + ans + "です。");

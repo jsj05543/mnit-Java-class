@@ -39,7 +39,7 @@ class Sample7
       car2 = car1;
       System.out.println("car2にcar1を代入しました。");
 
-      System.out.print("car1がさす");
+      System.out.print("car1が指す");
       car1.show();
       System.out.print("car2がさす");
       car2.show();

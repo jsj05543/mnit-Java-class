@@ -1,6 +1,6 @@
 package mnit08;
 //車クラス
-class Car2 
+class Car2
 {
    int num;
    double gas;
@@ -22,5 +22,6 @@ class Sample2
       car1.num = 1234;
       car1.gas = 20.5;
       car1.show();
+      System.out.println("ガソリン量は");
    }
 }
