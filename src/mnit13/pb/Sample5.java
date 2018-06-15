@@ -4,7 +4,7 @@ class Sample5
 {
    public static void main(String args[])
    {
-      pc.Car car1 = new pc.Car();
+      mnit13.pc.Car car1 = new mnit13.pc.Car();
       car1.show();
    }
 }
