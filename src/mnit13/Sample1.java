@@ -1,3 +1,4 @@
+package mnit13;
 class Sample1
 {
    public static void main(String[] args)

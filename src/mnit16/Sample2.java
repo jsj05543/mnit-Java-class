@@ -1,5 +1,10 @@
-import java.awt.*;
-import java.awt.event.*;
+package mnit16;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Frame;
+import java.awt.Label;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class Sample2 extends Frame
 {
@@ -11,9 +16,9 @@ public class Sample2 extends Frame
    }
    public Sample2()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
-      lb = new Label("‚æ‚¤‚±‚»B");
+      lb = new Label("ã‚ˆã†ã“ãã€‚");
 
       add(lb);
 

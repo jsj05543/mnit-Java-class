@@ -1,10 +1,13 @@
-import java.awt.*;
-import java.awt.event.*;
+package mnit16;
+import java.awt.Frame;
+import java.awt.Graphics;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class Sample7 extends Frame implements Runnable
 {
    int num;
-   
+
    public static void main(String[] args)
    {
       Sample7 sm = new Sample7();
@@ -12,7 +15,7 @@ public class Sample7 extends Frame implements Runnable
    }
    public Sample7()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
       addWindowListener(new SampleWindowListener());
 
@@ -35,7 +38,7 @@ public class Sample7 extends Frame implements Runnable
    }
    public void paint(Graphics g)
    {
-      String str = num + "‚Å‚·B";
+      String str = num + "ã§ã™ã€‚";
       g.drawString(str, 100, 100);
    }
 

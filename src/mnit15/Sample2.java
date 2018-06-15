@@ -1,8 +1,9 @@
-class Car extends Thread
+package mnit15;
+class Car2 extends Thread
 {
    private String name;
 
-   public Car(String nm)
+   public Car2(String nm)
    {
       name = nm;
    }
@@ -10,25 +11,25 @@ class Car extends Thread
    {
       for(int i=0; i<5; i++){
 
-         System.out.println(name + "‚Ìˆ—‚ð‚µ‚Ä‚¢‚Ü‚·B");
+         System.out.println(name + "ã®å‡¦ç†ã‚’ã—ã¦ã„ã¾ã™ã€‚");
 
-      } 
+      }
    }
 }
 class Sample2
 {
    public static void main(String[] args)
    {
-      Car car1 = new Car("1†ŽÔ");
+      Car car1 = new Car("1å·è»Š");
       car1.start();
 
-      Car car2 = new Car("2†ŽÔ");
+      Car car2 = new Car("2å·è»Š");
       car2.start();
 
       for(int i=0; i<5; i++){
 
-         System.out.println("main()‚Ìˆ—‚ð‚µ‚Ä‚¢‚Ü‚·B");
+         System.out.println("main()ã®å‡¦ç†ã‚’ã—ã¦ã„ã¾ã™ã€‚");
 
-      } 
+      }
    }
 }

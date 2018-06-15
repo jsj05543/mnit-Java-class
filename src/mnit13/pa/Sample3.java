@@ -1,4 +1,4 @@
-package pa;
+package mnit13.pa;
 
 class Sample3
 {

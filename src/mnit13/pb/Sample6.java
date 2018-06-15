@@ -1,5 +1,5 @@
-package pb;
-import pc.Car;
+package mnit13.pb;
+import mnit13.pc.Car;
 
 class Sample6
 {

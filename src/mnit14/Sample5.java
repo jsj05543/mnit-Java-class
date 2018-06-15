@@ -1,17 +1,18 @@
+package mnit14;
 class CarException extends Exception
 {
 }
-//ÔƒNƒ‰ƒX
+//è»Šã‚¯ãƒ©ã‚¹
 class Car
 {
    private int num;
    private double gas;
-   
+
    public Car()
    {
       num = 0;
       gas = 0.0;
-      System.out.println("Ô‚ğì¬‚µ‚Ü‚µ‚½B");
+      System.out.println("è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
    }
    public void setCar (int n, double g) throws CarException
    {
@@ -23,13 +24,13 @@ class Car
      else{
         num = n;
         gas = g;
-        System.out.println("ƒiƒ“ƒo[‚ğ" + num + "‚ÉƒKƒ\ƒŠƒ“—Ê‚ğ" + gas + "‚É‚µ‚Ü‚µ‚½B");
+        System.out.println("ãƒŠãƒ³ãƒãƒ¼ã‚’" + num + "ã«ã‚¬ã‚½ãƒªãƒ³é‡ã‚’" + gas + "ã«ã—ã¾ã—ãŸã€‚");
      }
    }
    public void show()
    {
-      System.out.println("Ô‚Ìƒiƒ“ƒo[‚Í" + num + "‚Å‚·B");
-      System.out.println("ƒKƒ\ƒŠƒ“—Ê‚Í" + gas + "‚Å‚·B");
+      System.out.println("è»Šã®ãƒŠãƒ³ãƒãƒ¼ã¯" + num + "ã§ã™ã€‚");
+      System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã¯" + gas + "ã§ã™ã€‚");
    }
 }
 
@@ -37,13 +38,13 @@ class Sample5
 {
    public static void main(String[] args)
    {
-      
+
       Car car1 = new Car();
       try{
          car1.setCar(1234, -10.0);
       }
       catch(CarException e){
-         System.out.println(e + "‚ª‘—o‚³‚ê‚Ü‚µ‚½B");
+         System.out.println(e + "ãŒé€å‡ºã•ã‚Œã¾ã—ãŸã€‚");
       }
       car1.show();
    }

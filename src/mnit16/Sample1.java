@@ -1,5 +1,7 @@
-import java.awt.*;
-import java.awt.event.*;
+package mnit16;
+import java.awt.Frame;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class Sample1 extends Frame
 {
@@ -9,7 +11,7 @@ public class Sample1 extends Frame
    }
    public Sample1()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
       addWindowListener(new SampleWindowListener());
 

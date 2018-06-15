@@ -1,24 +1,25 @@
-//ÔƒNƒ‰ƒX
+package mnit13;
+//è»Šã‚¯ãƒ©ã‚¹
 class Car
 {
-   private int num;
-   private double gas;
-   
-   public Car()
-   {
-      num = 0;
-      gas = 0.0;
-      System.out.println("Ô‚ğì¬‚µ‚Ü‚µ‚½B");
-   }
-   public void setCar(int n, double g)
-   {
-      num = n;
-      gas = g;
-      System.out.println("ƒiƒ“ƒo[‚ğ" + num + "‚ÉƒKƒ\ƒŠƒ“—Ê‚ğ" + gas+ "‚É‚µ‚Ü‚µ‚½B");
-   }
-   public void show()
-   {
-      System.out.println("Ô‚Ìƒiƒ“ƒo[‚Í" + num + "‚Å‚·B");
-      System.out.println("ƒKƒ\ƒŠƒ“—Ê‚Í" + gas + "‚Å‚·B");
-   }
+ private int num;
+ private double gas;
+
+ public Car()
+ {
+    num = 0;
+    gas = 0.0;
+    System.out.println("è»Šã‚’ä½œæˆã—ã¾ã—ãŸã€‚");
+ }
+ public void setCar(int n, double g)
+ {
+    num = n;
+    gas = g;
+    System.out.println("ãƒŠãƒ³ãƒãƒ¼ã‚’" + num + "ã«ã‚¬ã‚½ãƒªãƒ³é‡ã‚’" + gas+ "ã«ã—ã¾ã—ãŸã€‚");
+ }
+ public void show()
+ {
+    System.out.println("è»Šã®ãƒŠãƒ³ãƒãƒ¼ã¯" + num + "ã§ã™ã€‚");
+    System.out.println("ã‚¬ã‚½ãƒªãƒ³é‡ã¯" + gas + "ã§ã™ã€‚");
+ }
 }

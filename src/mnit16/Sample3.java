@@ -1,5 +1,10 @@
-import java.awt.*;
-import java.awt.event.*;
+package mnit16;
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class Sample3 extends Frame
 {
@@ -11,9 +16,9 @@ public class Sample3 extends Frame
    }
    public Sample3()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
-      bt = new Button("‚æ‚¤‚±‚»B");
+      bt = new Button("ã‚ˆã†ã“ãã€‚");
       add(bt);
 
       addWindowListener(new SampleWindowListener());
@@ -34,7 +39,7 @@ public class Sample3 extends Frame
    {
       public void actionPerformed(ActionEvent e)
       {
-         bt.setLabel("‚±‚ñ‚É‚¿‚ÍB");
+         bt.setLabel("ã“ã‚“ã«ã¡ã¯ã€‚");
       }
    }
 }

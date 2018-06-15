@@ -1,17 +1,22 @@
-import java.awt.*;
-import java.awt.event.*;
+package mnit16;
+import java.awt.Frame;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class Sample5 extends Frame
 {
    Image im;
-   
+
    public static void main(String[] args)
    {
       Sample5 sm = new Sample5();
    }
    public Sample5()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
       Toolkit tk = getToolkit();
       im = tk.getImage("Image.jpg");

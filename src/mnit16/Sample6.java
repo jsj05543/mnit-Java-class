@@ -1,18 +1,24 @@
-import java.awt.*;
-import java.awt.event.*;
+package mnit16;
+import java.awt.Color;
+import java.awt.Frame;
+import java.awt.Graphics;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class Sample6 extends Frame
 {
    int x = 10;
    int y = 10;
-   
+
    public static void main(String[] args)
    {
       Sample6 sm = new Sample6();
    }
    public Sample6()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
       addWindowListener(new SampleWindowListener());
       addMouseListener(new SampleMouseAdapter());

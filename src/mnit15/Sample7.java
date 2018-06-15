@@ -1,18 +1,19 @@
-//‰ïĞƒNƒ‰ƒX
+package mnit15;
+//ä¼šç¤¾ã‚¯ãƒ©ã‚¹
 class Company
 {
    private int sum = 0;
    public synchronized void add(int a)
    {
       int tmp = sum;
-      System.out.println("Œ»İA‡ŒvŠz‚Í" + tmp + "‰~‚Å‚·B");
-      System.out.println(a + "‰~‰Ò‚¬‚Ü‚µ‚½B");
+      System.out.println("ç¾åœ¨ã€åˆè¨ˆé¡ã¯" + tmp + "å††ã§ã™ã€‚");
+      System.out.println(a + "å††ç¨¼ãã¾ã—ãŸã€‚");
       tmp = tmp + a;
-      System.out.println("‡ŒvŠz‚ğ" + tmp + "‰~‚É‚µ‚Ü‚·B");
+      System.out.println("åˆè¨ˆé¡ã‚’" + tmp + "å††ã«ã—ã¾ã™ã€‚");
       sum = tmp;
    }
 }
-//‰^“]èƒNƒ‰ƒX
+//é‹è»¢æ‰‹ã‚¯ãƒ©ã‚¹
 class Driver extends Thread
 {
    private Company comp;
@@ -25,7 +26,7 @@ class Driver extends Thread
    {
       for(int i=0; i<3; i++){
          comp.add(50);
-      } 
+      }
    }
 }
 

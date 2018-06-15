@@ -1,4 +1,4 @@
-package pb;
+package mnit13.pb;
 
 class Sample5
 {

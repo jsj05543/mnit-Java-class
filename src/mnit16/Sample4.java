@@ -1,5 +1,10 @@
-import java.awt.*;
-import java.awt.event.*;
+package mnit16;
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class Sample4 extends Frame
 {
@@ -11,9 +16,9 @@ public class Sample4 extends Frame
    }
    public Sample4()
    {
-      super("ƒTƒ“ƒvƒ‹");
+      super("ã‚µãƒ³ãƒ—ãƒ«");
 
-      bt = new Button("‚æ‚¤‚±‚»B");
+      bt = new Button("ã‚ˆã†ã“ãã€‚");
       add(bt);
 
       addWindowListener(new SampleWindowListener());
@@ -37,11 +42,11 @@ public class Sample4 extends Frame
       public void mousePressed(MouseEvent e){}
       public void mouseEntered(MouseEvent e)
       {
-         bt.setLabel("‚¢‚ç‚Á‚µ‚á‚¢‚Ü‚¹B");
+         bt.setLabel("ã„ã‚‰ã£ã—ã‚ƒã„ã¾ã›ã€‚");
       }
       public void mouseExited(MouseEvent e)
       {
-         bt.setLabel("‚æ‚¤‚±‚»B");
+         bt.setLabel("ã‚ˆã†ã“ãã€‚");
       }
    }
 }

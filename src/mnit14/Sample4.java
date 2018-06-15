@@ -1,3 +1,4 @@
+package mnit14;
 class Sample4
 {
    public static void main(String[] args)
@@ -7,17 +8,17 @@ class Sample4
          int[] test;
          test = new int[5];
 
-         System.out.println("test[10]‚É’l‚ğ‘ã“ü‚µ‚Ü‚·B");
+         System.out.println("test[10]ï¿½É’lï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½B");
 
          test[10] = 80;
-         System.out.println("test[10]‚É80‚ğ‘ã“ü‚µ‚Ü‚µ‚½B");
+         System.out.println("test[10]ï¿½ï¿½80ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B");
 
       }
       catch(ArrayIndexOutOfBoundsException e){
 
-         System.out.println("”z—ñ‚Ì—v‘f‚ğ‚±‚¦‚Ä‚¢‚Ü‚·B");
-         System.out.println(e + "‚Æ‚¢‚¤—áŠO‚ª”­¶‚µ‚Ü‚µ‚½B");
+         System.out.println("ï¿½zï¿½ï¿½Ì—vï¿½fï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B");
+         System.out.println(e + "ï¿½Æ‚ï¿½ï¿½ï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B");
       }
-      System.out.println("–³–I—¹‚µ‚Ü‚µ‚½B");
+      System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B");
    }
 }
